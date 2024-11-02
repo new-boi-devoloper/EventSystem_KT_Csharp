@@ -1,0 +1,14 @@
+C:\Users\Asus\Desktop\P\ItHub\3 course\C#\Projects\IksDimaEventSystem\IksDimaEventSystem\bin\Debug\net8.0\IksDimaEventSystem.exe
+C:\Users\Asus\Desktop\P\ItHub\3 course\C#\Projects\IksDimaEventSystem\IksDimaEventSystem\bin\Debug\net8.0\IksDimaEventSystem.deps.json
+C:\Users\Asus\Desktop\P\ItHub\3 course\C#\Projects\IksDimaEventSystem\IksDimaEventSystem\bin\Debug\net8.0\IksDimaEventSystem.runtimeconfig.json
+C:\Users\Asus\Desktop\P\ItHub\3 course\C#\Projects\IksDimaEventSystem\IksDimaEventSystem\bin\Debug\net8.0\IksDimaEventSystem.dll
+C:\Users\Asus\Desktop\P\ItHub\3 course\C#\Projects\IksDimaEventSystem\IksDimaEventSystem\bin\Debug\net8.0\IksDimaEventSystem.pdb
+C:\Users\Asus\Desktop\P\ItHub\3 course\C#\Projects\IksDimaEventSystem\IksDimaEventSystem\obj\Debug\net8.0\IksDimaEventSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\P\ItHub\3 course\C#\Projects\IksDimaEventSystem\IksDimaEventSystem\obj\Debug\net8.0\IksDimaEventSystem.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\P\ItHub\3 course\C#\Projects\IksDimaEventSystem\IksDimaEventSystem\obj\Debug\net8.0\IksDimaEventSystem.AssemblyInfo.cs
+C:\Users\Asus\Desktop\P\ItHub\3 course\C#\Projects\IksDimaEventSystem\IksDimaEventSystem\obj\Debug\net8.0\IksDimaEventSystem.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\P\ItHub\3 course\C#\Projects\IksDimaEventSystem\IksDimaEventSystem\obj\Debug\net8.0\IksDimaEventSystem.dll
+C:\Users\Asus\Desktop\P\ItHub\3 course\C#\Projects\IksDimaEventSystem\IksDimaEventSystem\obj\Debug\net8.0\refint\IksDimaEventSystem.dll
+C:\Users\Asus\Desktop\P\ItHub\3 course\C#\Projects\IksDimaEventSystem\IksDimaEventSystem\obj\Debug\net8.0\IksDimaEventSystem.pdb
+C:\Users\Asus\Desktop\P\ItHub\3 course\C#\Projects\IksDimaEventSystem\IksDimaEventSystem\obj\Debug\net8.0\IksDimaEventSystem.genruntimeconfig.cache
+C:\Users\Asus\Desktop\P\ItHub\3 course\C#\Projects\IksDimaEventSystem\IksDimaEventSystem\obj\Debug\net8.0\ref\IksDimaEventSystem.dll
