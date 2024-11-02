@@ -4,26 +4,47 @@
 
 using IksDimaEventSystem;
 
-MyEventSystem.TryCreateEvent("AttackWaveStart");
-MyEventSystem.TryCreateEvent("AttackWaveEnd");
-MyEventSystem.TryCreateEvent("DateTime");
+if (!MyEventSystem.TryCreateEvent("AttackWaveStart"))
+{
+    Console.WriteLine("Ошибка: Событие 'AttackWaveStart' уже существует.");
+}
+
+if (!MyEventSystem.TryCreateEvent("AttackWaveEnd"))
+{
+    Console.WriteLine("Ошибка: Событие 'AttackWaveEnd' уже существует.");
+}
+
+if (!MyEventSystem.TryCreateEvent("DateTime"))
+{
+    Console.WriteLine("Ошибка: Событие 'DateTime' уже существует.");
+}
 
 var player = new Player();
 var observer = new Observer();
 
 var timer = new Timer(state =>
 {
-    MyEventSystem.TryCallEvent("DateTime");
+    if (!MyEventSystem.TryCallEvent("DateTime"))
+    {
+        Console.WriteLine("Ошибка: Событие 'DateTime' не существует.");
+    }
 }, null, 0, 1000);
 
 for (int i = 0; i < 2; i++)
 {
-    MyEventSystem.TryCallEvent("AttackWaveStart");
+    if (!MyEventSystem.TryCallEvent("AttackWaveStart"))
+    {
+        Console.WriteLine("Ошибка: Событие 'AttackWaveStart' не существует.");
+    }
     Thread.Sleep(2000);
-    MyEventSystem.TryCallEvent("AttackWaveEnd");
+
+    if (!MyEventSystem.TryCallEvent("AttackWaveEnd"))
+    {
+        Console.WriteLine("Ошибка: Событие 'AttackWaveEnd' не существует.");
+    }
     Thread.Sleep(2000);
 }
 
 MyEventSystem.Clear();
 
-Console.WriteLine("Наслаждайтесь результатом!");
+Console.WriteLine("Наслаждайтесь результатом КТ!");

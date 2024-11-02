@@ -4,14 +4,25 @@ public class Observer
 {
     public Observer()
     {
-        MyEventSystem.TrySubscribe("AttackWaveStart", OnAttackWaveStart);
-        MyEventSystem.TrySubscribe("AttackWaveEnd", OnAttackWaveEnd);
-        MyEventSystem.TrySubscribe("DateTime", OnDateTime);
+        if (!MyEventSystem.TrySubscribe("AttackWaveStart", OnAttackWaveStart))
+        {
+            Console.WriteLine("Ошибка: Событие 'AttackWaveStart' не существует.");
+        }
+
+        if (!MyEventSystem.TrySubscribe("AttackWaveEnd", OnAttackWaveEnd))
+        {
+            Console.WriteLine("Ошибка: Событие 'AttackWaveEnd' не существует.");
+        }
+
+        if (!MyEventSystem.TrySubscribe("DateTime", OnDateTime))
+        {
+            Console.WriteLine("Ошибка: Событие 'DateTime' не существует.");
+        }
     }
 
     private void OnAttackWaveStart()
     {
-        Console.WriteLine("началась атака монстров!");
+        Console.WriteLine("началась атака монстров");
     }
 
     private void OnAttackWaveEnd()
@@ -21,6 +32,6 @@ public class Observer
 
     private void OnDateTime()
     {
-        Console.WriteLine("время пошло!");
+        Console.WriteLine("время пошло");
     }
 }

@@ -9,20 +9,34 @@ public class Player
 
     private void PrepareToAttack()
     {
-        MyEventSystem.TrySubscribe("AttackWaveStart", OnAttackWaveStart);
-        MyEventSystem.TrySubscribe("AttackWaveEnd", OnAttackWaveEnd);
-        MyEventSystem.TrySubscribe("DateTime", OnDateTime);
+        if (!MyEventSystem.TrySubscribe("AttackWaveStart", OnAttackWaveStart))
+        {
+            Console.WriteLine("Ошибка: Событие 'AttackWaveStart' не существует.");
+        }
+
+        if (!MyEventSystem.TrySubscribe("AttackWaveEnd", OnAttackWaveEnd))
+        {
+            Console.WriteLine("Ошибка: Событие 'AttackWaveEnd' не существует.");
+        }
+
+        if (!MyEventSystem.TrySubscribe("DateTime", OnDateTime))
+        {
+            Console.WriteLine("Ошибка: Событие 'DateTime' не существует.");
+        }
     }
 
     private void OnAttackWaveStart()
     {
-        Console.WriteLine($"сейчас {DateTime.Now:dd.MM.yyyy HH:mm:ss}, начинаю отбиваться");
+        Console.WriteLine($"Сейчас {DateTime.Now:dd.MM.yyyy HH:mm:ss}, готов к атаке");
     }
 
     private void OnAttackWaveEnd()
     {
-        Console.WriteLine("атака была отбита");
-        MyEventSystem.TryUnsubscribe("AttackWaveEnd", OnAttackWaveEnd);
+        Console.WriteLine("Я успешно отбился");
+        if (!MyEventSystem.TryUnsubscribe("AttackWaveEnd", OnAttackWaveEnd))
+        {
+            Console.WriteLine("Ошибка: Событие 'AttackWaveEnd' не существует.");
+        }
     }
 
     private void OnDateTime()
