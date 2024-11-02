@@ -1,8 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-// Создаем события
-
-using IksDimaEventSystem;
+﻿using IksDimaEventSystem;
 
 if (!MyEventSystem.TryCreateEvent("AttackWaveStart"))
 {
@@ -32,6 +28,7 @@ var timer = new Timer(state =>
 
 for (int i = 0; i < 2; i++)
 {
+    Console.WriteLine("==============WAVE==============");
     if (!MyEventSystem.TryCallEvent("AttackWaveStart"))
     {
         Console.WriteLine("Ошибка: Событие 'AttackWaveStart' не существует.");
